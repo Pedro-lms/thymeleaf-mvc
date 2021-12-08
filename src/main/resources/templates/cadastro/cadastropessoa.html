@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 <title>Boa</title>
 </head>
 <body>
@@ -13,8 +16,12 @@
 	<input name="email">
 	<label>Idade</label>
 	<input name="idade">
-	<input type="submit" value="Salvar">
+	<button class="btn waves-effect waves-light" input type="submit" value="Salvar">Salvar
+	  <i class="material-icons center"></i>
+  </button>
 </form>
+
+<a href="listapessoas"></a>
 
 	<table>
 		<tr th:each ="pessoa: ${pessos}">
@@ -24,5 +31,8 @@
 			<td th:text = ${pessoa.idade}></td>
 		</tr>
 	</table>
+	 <script type="text/javascript" src="materialize/js/materialize.js"></script>
+	 <script type="text/javascript" src="js/materialize.min.js"></script>
+	 
 </body>
 </html>
