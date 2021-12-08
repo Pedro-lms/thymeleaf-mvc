@@ -18,6 +18,7 @@ public class Pessoa implements Serializable{
 	
 	private String nome;
 	private String email;
+	private Integer idade;
 	
 	public Pessoa() {
 	}
@@ -46,6 +47,11 @@ public class Pessoa implements Serializable{
 		this.email = email;
 	}
 	
-	
-	
+	public Integer getIdade() {
+		return idade;
+	}
+
+	public void setIdade(Integer idade) {
+		this.idade = idade;
+	}
 }
